@@ -26,7 +26,7 @@ Object containing ``RequestInfo`` options
 ## Events
 
 ### ``RequestInfo.on('progress', fn)``
-This event is emitted when a progress report is ready. It fires every ``RequestInfo.options.reportInterval``
+It is emitted every ``RequestInfo.options.reportInterval``
 
 ``RequestInfo.status`` object is passed as an argument, to ``fn`` function
 
@@ -34,15 +34,17 @@ This event is emitted when a progress report is ready. It fires every ``RequestI
 
 ### ``RequestInfo.pipe()``
 
-It returns original ``request.pipe()`` function
+Returns original ``request.pipe()`` function
 
 ### ``RequestInfo.on()``
-It returns original ``request.on()`` function
+Returns original ``request.on()`` function
 
 ## Properties
 
 ### ``status``
-Object containing download status (with it's initial values)
+Object containing download status
+
+Below is it's structure, with initial values:
 ```js
 {
   percent: 0,
@@ -69,4 +71,4 @@ Object containing download status (with it's initial values)
 
 Values like ``percent`` and ``time.eta`` can be calculated only if ``size.total`` is known
 
-You can access this properity at any time
+You can access this properity at any time, even after download has finished

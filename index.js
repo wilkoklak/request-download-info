@@ -10,7 +10,6 @@ class RequestInfo {
     this.options = Object.assign({}, defaultOptions, options)
 
     request.on('response', res => {
-      console.log(res.headers)
       this.status = {
         size: {
           total: res.headers['content-length'],
@@ -39,6 +38,11 @@ class RequestInfo {
           this.status.percent = Number(this.status.size.downloaded / this.status.size.total * 100).toFixed(2)
         }
         this.reportStatus()
+      })
+      res.on('end', () => {
+        this.status.speed = 0
+        this.status.percent = 100
+        this.status.time.eta = 0
       })
     })
   }
