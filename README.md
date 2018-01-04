@@ -12,14 +12,14 @@ npm install request --save
 ```
 Then you need to install this module:
 ```bash
-npm install requestinfo --save
+npm install request-download-info --save
 ```
 
 ## Usage
 
 ```js
 const request = require('request')
-const RequestInfo = require('requestinfo')
+const RequestInfo = require('request-download-info')
 const fs = require('fs')
 
 let info = new RequestInfo(
