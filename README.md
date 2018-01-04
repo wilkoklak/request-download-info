@@ -1,4 +1,4 @@
-# requestinfo
+# request-download-info
 This module is a wrapper around [request](https://www.npmjs.com/package/request) module.
 
 It provides ``progress`` event that shows current of the download

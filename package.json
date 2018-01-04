@@ -1,5 +1,5 @@
 {
-  "name": "requestinfo",
+  "name": "request-download-info",
   "version": "1.0.0",
   "description": "A module to show info about request",
   "main": "index.js",
@@ -13,12 +13,12 @@
     "status"
   ],
   "bugs": {
-    "url": "https://github.com/wilkoklak/requestinfo/issues",
+    "url": "https://github.com/wilkoklak/request-download-info/issues",
     "email": "nepenthe.a@gmx.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilkoklak/requestinfo.git"
+    "url": "https://github.com/wilkoklak/request-download-info.git"
   },
   "author": "Artur Boryś <nepenthe.a@gmx.com>",
   "license": "MIT",
