@@ -12,6 +12,14 @@
     "progress",
     "status"
   ],
+  "bugs": {
+    "url": "https://github.com/wilkoklak/requestinfo/issues",
+    "email": "nepenthe.a@gmx.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilkoklak/requestinfo.git"
+  },
   "author": "Artur Boryś <nepenthe.a@gmx.com>",
   "license": "MIT",
   "dependencies": {
